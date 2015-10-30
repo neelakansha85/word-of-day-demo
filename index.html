@@ -1,0 +1,27 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        
+    </head>
+    <body onload="return check_word_of_day();">
+        <form name="form" method="post" action="/index.html" onsubmit="return save_word(this);">
+            <fieldset>
+                <label>Enter Message</label>
+                <span><input type="text" size="100" name="user_word_txt" value=""></span>
+                <span><input type="submit" value="Save">
+            </fieldset>
+        </form>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
